@@ -5,12 +5,12 @@
 ### Backend
 - Python
 - Flask
+- CS50's SQL (After fighting SQLAlchemy)
 - Sqlite3
-- Python Sqlite3 Library
 
 ### Frontend
 - HTML/CSS
-- Bootstrap(*possibly Tailwind/Material/IBM etc.* )
+- Beer CSS Framework (Material Design)
 - Flask Templates
 - JavaScript
 

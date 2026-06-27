@@ -1,0 +1,22 @@
+{
+    "singleQuote": true,
+    "bracketSameLine": false,
+    "singleAttributePerLine": false,
+    "htmlWhitespaceSensitivity": "css",
+    "plugins": [
+        "/opt/homebrew/lib/node_modules/prettier-plugin-jinja-template/lib/index.js"
+    ],
+    "overrides": [
+        {
+            "files": [
+                "*.html",
+                "*.jinja",
+                "*.jinja2",
+                "*.j2"
+            ],
+            "options": {
+                "parser": "jinja-template"
+            }
+        }
+    ]
+}

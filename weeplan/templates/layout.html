@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>{% block title %}{% endblock %}</title>
+    <!-- Material Symbols (icons used by BeerCSS) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+      rel="stylesheet"
+    />
+    <!-- BeerCSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/beercss@4.0.21/dist/cdn/beer.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../static/styles.css" />
+  </head>
+  <body class="dark">
+    <nav class="top round center nav-top l">
+      <header>
+        <img
+          class="circle extra"
+          src="../static/assets/logo_weeplan.png"
+          alt="notepad with sticky notes"
+        />
+      </header>
+      <a href="{{ url_for('index') }}">
+        <button class="medium-elevate large">
+          <i>home</i>
+          <span>Home</span>
+        </button>
+      </a>
+    </nav>
+
+    <nav class="top round center nav-top m">
+      <header>
+        <img
+          class="circle extra"
+          src="../static/assets/logo_weeplan.png"
+          alt="notepad with sticky notes"
+        />
+      </header>
+      <a>
+        <i>home</i>
+        <span>Home</span>
+      </a>
+      <a>
+        <i>search</i>
+        <span>Search</span>
+      </a>
+      <a>
+        <i>share</i>
+        <span>Share</span>
+      </a>
+      <a>
+        <i>more_vert</i>
+        <span>More</span>
+      </a>
+    </nav>
+
+    <nav class="bottom s">
+      <a>
+        <i>home</i>
+      </a>
+      <a>
+        <i>search</i>
+      </a>
+      <a>
+        <i>share</i>
+      </a>
+      <a>
+        <i>more_vert</i>
+      </a>
+    </nav>
+
+    <main class="responsive">
+      <img
+        alt="beer and woman"
+        src="https://www.beercss.com/beer-and-woman.svg"
+        class="responsive round medium-height"
+      />
+      <h3>Welcome</h3>
+      <h4>The beer is ready!</h4>
+    </main>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/beercss@4.0.21/dist/cdn/beer.min.js"
+    ></script>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@1.1.4/dist/cdn/material-dynamic-colors.min.js"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+/* 
+Navigation responsiveness. Top should show only above 600px
+Small should only show below 600px
+ */
+
+.nav-top {
+  position: fixed !important;
+  top: 1rem !important;
+  width: max-content;
+  max-width: 90%;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  right: auto !important;
+  z-index: 100;
+}
+
+main {
+  padding-top: 6rem;
+}
+
+@media (max-width: 600px) {
+  .nav-top {
+    display: none !important;
+  }
+}
+@media (min-width: 601px) {
+  .nav-bottom {
+    display: none !important;
+  }
+}
+
+/*
+Flasks flashed messages
+Using BeerCSS' snackbars but need to account for multiple
+*/
+
+.snackbar + .snackbar {
+  bottom: calc(var(--snackbar-height, 56px) * 1 + 1rem);
+}
+.snackbar + .snackbar + .snackbar {
+  bottom: calc(var(--snackbar-height, 56px) * 2 + 2rem);
+}
